@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    double a, b, c;
+
+    scanf("%lf %lf %lf", &a, &b, &c);
+
+    if (a >= b && a >= c)
+        printf("Greatest: %.2lf\n", a);
+    else if (b >= a && b >= c)
+        printf("Greatest: %.2lf\n", b);
+    else
+        printf("Greatest: %.2lf\n", c);
+
+    if (a <= b && a <= c)
+        printf("Smallest: %.2lf\n", a);
+    else if (b <= a && b <= c)
+        printf("Smallest: %.2lf\n", b);
+    else
+        printf("Smallest: %.2lf\n", c);
+
+    return 0;
+}
